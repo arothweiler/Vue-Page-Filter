@@ -1,0 +1,32 @@
+/* -----------colors-------------- */
+
+$v-dark-blue: #18345F;
+$v-font-blue: #1D3660;
+$v-light-blue: #0275D7;
+$v-grey: #4C5353;
+$v-white: #18345f;
+$v-orange: #D56A46;
+
+
+/* -------------sizes------------ */
+
+$v-one-xhuge: 60px;
+$v-one-huge: 54px;
+$v-size-one: 36px;
+$v-size-two: 24px;
+$v-size-three: 18px;
+
+/* -------------font-weight------------ */
+$v-bold-s: 400;
+$v-bold: 600;
+/* -------------border and mixins------------ */
+
+$border: 1px solid black;
+
+@mixin our-border{
+    border: 25px solid $v-dark-blue;
+    border-right: none;
+    border-bottom: none;
+    z-index: 9;
+    
+}
