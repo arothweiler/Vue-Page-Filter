@@ -2,10 +2,10 @@
   <div class="hello">
     <div class="right-header">
       <div class="right-header-img">
-        <div><img src="../assets/logo.png"></div>  
+        <div><img :src="getHeaderPicture"></div>  
       </div>
       <div class="right-header-text">
-        <div><span>MATCH</span>ADEMICS</div>
+        <div :style="{color: getGlobalColorValue }">{{getNameFun}}</div>
         <div>Build teams that work</div>
       </div>
     </div>
@@ -19,25 +19,31 @@
     </div>
 
     <div class="social-media">
-        <div><a href="#"><i class="fa fa-facebook"></i></a></div> 
-        <div><a href="#"><i class="fa fa-twitter"></i></a></div>
-        <div><a href="#"><i class="fa fa-envelope-o"></i></a></div>
+        <div><a href="#"><i class="fab fa-facebook-f"></i></a></div> 
+        <div><a href="#"><i class="fab fa-twitter"></i></a></div>
+        <div><a href="#"><i class="fab fa-envelope-o"></i></a></div>
     </div>
     
   
   </div>
 </template>
-
 <script>
-  export default{
-    name: 'HelloWorld',
-    data() {
-      return {
-        msg: 'Welcome to Your Vue.js App'
-      }
-    }
-  }
-</script>     
+export default {
+    name: "Navigation",
+     computed: {
+            getNameFun(){
+              return  this.$store.getters.value;
+            },
+            getHeaderPicture(){
+              return this.$store.getters.getHeaderPicture;
+            },
+            getGlobalColorValue(){
+              return this.$store.getters.getMainColorValue;
+            }
+        }
+}
+</script>
+
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
@@ -48,7 +54,6 @@ justify-content:space-between;
 flex-direction: row;
 align-items: center;
 padding: 0px 10px;
-font-family: Segoe UI, Semibold;
 position: absolute;
 width: 100vw;
 
@@ -67,16 +72,19 @@ align-items: center;
 align-items: center;
 font-size: $v-size-one;
 color: $v-light-blue;
+
 div{
   &:first-child{
-    font-weight: 900;
-    color: $v-dark-blue;
+     color: $v-light-blue;
     span{
-    color: $v-light-blue;
+    color: $v-dark-blue;
+    font-weight: 900;
     } 
   }
   &:last-child {
     font-size: $v-size-two;
+    color: $v-font-blue;
+    font-weight: 600;
   }
   }
   
@@ -86,6 +94,7 @@ display: flex;
 flex-direction: row;
 font-size: $v-size-two;
 color: $v-dark-blue;
+font-weight: 600;
   >div {
     margin: 30px;
 
@@ -93,9 +102,8 @@ color: $v-dark-blue;
   .line-of{
   color: $v-dark-blue;
   height: $v-size-one;
-  border-width: 2px;
+  border-width: 4px;
   border-left-style: solid;
-
   }
 
 }

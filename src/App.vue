@@ -1,61 +1,58 @@
 <template>
   <div id="app">
-    <Navigation/>
-    <Main/>
-    <Carousel/>
-    <MainTwo/>
-    <MainThree/>
-    <MainFour/>
-    <MainFive/>
-    <MainSix/>
-    <Footer/>
+   <!--  <img src="./assets/logo.png"> -->
+    <the-navigation/>
+    <the-main-component/>
+    <vue-carousel/>
+    <the-hiring-component/>
+    <the-managing-team/>
+    <the-great-team/>
+    <the-team-component/>
+    <the-footer-component/>
+    <the-change-page />
   </div>
 </template>
 
 <script>
-import Navigation from './components/Navigation.vue'
-import Main from './components/Main.vue'
-/* import MainTwo from './components/MainTwo.vue' */
-import Carousel from './components/Carousel.vue'
-import MainThree from './components/MainThree.vue'
-import MainFour from './components/MainFour.vue'
-import MainFive from './components/MainFive.vue'
-import MainSix from './components/MainSix.vue'
-import Footer from './components/Footer.vue'
 
-
+import TheNavigation from "./components/TheNavigation";
+import TheMainComponent from "./components/TheMainComponent";
+import VueCarousel from "./components/VueCarousel"
+import TheHiringComponent from "./components/TheHiringComponent";
+import TheManagingTeam from "./components/TheManagingTeam";
+import TheGreatTeam from "./components/TheGreatTeam";
+import TheTeamComponent from "./components/TheTeamComponent";
+import TheFooterComponent from "./components/TheFooterComponent";
+import TheChangePage from "./components/TheChangePage";
 
 export default {
-  name: 'App',
-  components:{
-    Navigation,
-    Main,
-   /*  MainTwo, */
-    Carousel,
-    MainThree,
-    MainFour,
-    MainFive,
-    MainSix,
-    Footer
+  name: "App",
+  components: {
+    TheNavigation,
+    TheMainComponent,
+    TheHiringComponent,
+    TheManagingTeam,
+    TheGreatTeam,
+    VueCarousel,
+    TheTeamComponent,
+    TheFooterComponent,
+    TheChangePage
   }
 }
+
 </script>
 
+
 <style>
-* {
-  box-sizing: border-box;
+*{
   margin: 0;
   padding: 0;
-
 }
-#app  {
-  font-family: Segoe UI, Frutiger, Frutiger Linotype, Dejavu Sans, Helvetica Neue, Arial, sans-serif;
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-align: center;
   color: #2c3e50;
-
-
 }
-
-
 </style>

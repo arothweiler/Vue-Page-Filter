@@ -27,8 +27,6 @@ export default {
   background: url(../assets/background-hands.jpg) no-repeat center center fixed;
   background-size: cover;
   height: 100vh;
-  
- /*  filter: opacity(55%); */
   display: flex;
   font-size: $v-size-one;
   .firm-main{

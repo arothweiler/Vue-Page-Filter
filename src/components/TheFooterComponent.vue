@@ -1,12 +1,17 @@
 <template>
   <div class="footer">
-      <p>(C) 2018 Matchademics LLC</p>
+      <p> {{getNameFun}}(C) LLC</p>
   </div>
 </template>
 
 <script>
 export default {
-  
+    name: "FooterComponent",
+     computed: {
+            getNameFun(){
+              return  this.$store.getters.value;
+            }
+        }
 }
 </script>
 

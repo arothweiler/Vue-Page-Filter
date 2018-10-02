@@ -95,7 +95,7 @@ margin-top: 100px;
   border: $border;
   width: 461px;
   height: 97px;
-font-weight:400;
+  font-weight:400;
   &:last-child{
       background: $v-light-blue;
       color: white;

@@ -3,7 +3,7 @@
 $v-dark-blue: #18345F;
 $v-font-blue: #1D3660;
 $v-light-blue: #0275D7;
-$v-grey: #4C5353;
+$v-grey: rgb(126, 126, 126);
 $v-white: #18345f;
 $v-orange: #D56A46;
 
@@ -15,6 +15,16 @@ $v-one-huge: 54px;
 $v-size-one: 36px;
 $v-size-two: 24px;
 $v-size-three: 18px;
+
+$xxl: 36px;
+$xl: 31px;
+$l: 28px;
+$m: 19px;
+$s: 18px;
+$xs: 16px;
+$xxs: 12px;
+$xxxs: 10px;
+
 
 /* -------------font-weight------------ */
 $v-bold-s: 400;
@@ -30,3 +40,66 @@ $border: 1px solid black;
     z-index: 9;
     
 }
+
+
+
+@mixin box-shadow{
+    box-shadow: 0px 0px 10px $grey;
+}
+
+@mixin animation{
+    transition: all ease 300ms;
+}
+
+
+
+/* -----------Query Breakpoints------------- */
+
+$screen-sm-max: 576px;
+
+// Small tablets (portrait view) before that 768px
+$screen-md-max: 810px;
+
+// Tablets and small desktops
+$screen-lg-max: 992px;
+
+// Large tablets and desktops
+$screen-xl-max: 1200px;
+
+/* -----------Mixins Query------------- */
+
+// Small devices
+@mixin s-sm {
+    @media (max-width: #{$screen-sm-max}) {
+        @content;
+    }
+ }
+ 
+ // Medium devices
+ @mixin s-md {
+    @media (max-width: #{$screen-md-max}) {
+        @content;
+    }
+ }
+ 
+ // Large devices
+ @mixin s-lg {
+    @media (max-width: #{$screen-lg-max}) {
+        @content;
+    }
+ }
+ 
+ // Extra large devices
+ @mixin s-xll {
+    @media (max-width: #{$screen-xl-max}) {
+        @content;
+    }
+ }
+
+ //Special Case in height
+
+ @mixin spec-size {
+    @media (max-height: 600px) {
+        @content;
+    }
+ }

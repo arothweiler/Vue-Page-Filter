@@ -27,7 +27,7 @@
 
 <div class="flex-container">
   <button>See Sample Report!</button>
-  <button><a href="./radar.html">Check Portfolio!</a></button>
+  <button>Check Portfolio!</button>
 </div>
  
 
