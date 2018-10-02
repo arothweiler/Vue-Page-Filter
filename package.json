@@ -4,6 +4,7 @@
   "description": "A Vue.js project",
   "author": "Andre Rothweiler <andre.rothweiler@gmail.com>",
   "private": true,
+  "homepage": "https://arothweiler.github.io/Vue-Page-Filter/",
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",

@@ -1,8 +1,16 @@
-# mycoolapp
-
+# Vue-Page-Filter
+----
 > A Vue.js project
+----
+## Intro
+----
+This is my Vue project which I combined with my older Vue project. 
+I've experimented a lot with Vuex, which is central store for your applications.
 
+At the center of every Vuex application is the store. A "store" is basically a container that holds your application state. There are two things that make a Vuex store different from a plain global object >>> Vuex Documentation
+----
 ## Build Setup
+----
 
 ``` bash
 # install dependencies
