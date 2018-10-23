@@ -7,11 +7,9 @@
             <h3>Change something...</h3>
             <p>Give a name of this site</p>
             <input placeholder="edit..." :value="value" @input="updateValue" >
-            <!-- <p>{{doubleCounter}}</p> -->
-          <!--   <p>{{doubleCounter}}</p> -->
             <br><br>
             <p>Our guiding principle</p>
-            <textarea rows="3" :value="getValue" @input="updateValueTitle" >
+            <textarea rows="2" :value="getValue" @input="updateValueTitle" >
             </textarea>
             <div class="color-picker-div">
                 <color-picker
@@ -91,43 +89,44 @@ import { Sketch } from 'vue-color';
 @import '../scss/variables.scss';
 
 #main-change-page{
-    padding: 24px;
+    padding: 18px;
     position:fixed;
     top: 4%;
     right: 0;
-    height: 750px;
+    height: 680px;
     width: 300px;
     z-index: 999;
     background: $v-grey;
-     transition: all 300ms ease-in-out;
+    border: 1px solid grey;
+   /*  transition: all 300ms ease-in-out;
     transform: translateX(350px);
     &:hover {
      transform: translateX(0px);
     transition: all 300ms ease-in-out;
-        } 
+        }  */
     h3 {
-        margin: -30px 0px 24px 0px;
-        padding: 5px; 
-        text-decoration: blue  underline;
-        font-weight: 700;
+    margin: -50px 0px 12px 0px;
+    text-decoration: blue underline;
+    font-weight: 700;
     }
     p {
-        line-height: 32px;
+    line-height: 24px;
     }
     input, textarea{
-        line-height: 25px;
-        width: 100%;
+    line-height: 25px;
+    width: 100%;
     
     }
     #left-box{
         position: relative;
-        top: -24px;
-        left: -74px;
+        top: -19px;
+        left: -69px;
         width: 50px;
         height: 50px;
         background: $v-orange;
         display: flex;
-
+        border: 1px solid grey;
+        border-right: none;
        i {
            color: white;
            vertical-align: center;
@@ -151,14 +150,13 @@ import { Sketch } from 'vue-color';
     }
 
 }
-div.color-picker-div[data-v-097ca860] {
+
+
+.vc-sketch[data-v-097ca860]{
 margin-top: 20px !important;
 margin-bottom: 20px !important;
-width: 100% !important;
-}
-
-div.vc-sketch[data-v-097ca860]{
-width: 100% !important;
+width: calc(100% - 18px);
+height: auto !important;
 border-radius: 0px !important;
 box-shadow: none !important;
 }
