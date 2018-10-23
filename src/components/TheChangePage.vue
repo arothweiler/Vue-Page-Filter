@@ -152,15 +152,15 @@ import { Sketch } from 'vue-color';
 
 }
 div.color-picker-div[data-v-097ca860] {
-margin-top: 20px;
-margin-bottom: 20px;
-width: 100%;
+margin-top: 20px !important;
+margin-bottom: 20px !important;
+width: 100% !important;
 }
 
 div.vc-sketch[data-v-097ca860]{
-width: 283px;
-border-radius: 0px;
-box-shadow: none;
+width: 100% !important;
+border-radius: 0px !important;
+box-shadow: none !important;
 }
 
 
