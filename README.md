@@ -12,7 +12,6 @@ At the center of every Vuex application is the store. A "store" is basically a c
 
 
 ## Build Setup
-----
 
 ``` bash
 # install dependencies
