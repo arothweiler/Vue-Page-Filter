@@ -6,6 +6,7 @@
             <div :style="{background: getGlobalColorValue }">I want help with <br> HIRING </div>
             <div :style="{background: getGlobalColorValue }">Learn more!</div>
             <div :style="{background: getGlobalColorValue }">I want help with <br> MANAGING A TEAM</div>
+            <a href="https://andrerothweiler.ch/vuefilter/#/">Klick Here! </a>
           </div>
        </div>
   </div>
