@@ -1,6 +1,7 @@
 # Vue-Page-Filter
 ----
 > A Vue.js project
+<bold><a href="https://andrerothweiler.ch/vuefilter/#/">Klick Here! </a></bold>
 ----
 ## Intro
 ----
@@ -11,7 +12,6 @@ At the center of every Vuex application is the store. A "store" is basically a c
 
 
 ## Build Setup
-----
 
 ``` bash
 # install dependencies
