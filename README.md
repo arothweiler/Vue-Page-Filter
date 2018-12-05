@@ -1,7 +1,7 @@
 # Vue-Page-Filter
 ----
 > A Vue.js project
-<bold><a href="https://andrerothweiler.ch/vuefilter/#/">Klick Here! </a></bold>
+<bold><a href="https://arothweiler.github.io/Vue-Page-Filter/vuefilter/index.html">Klick Here! </a></bold>
 ----
 ## Intro
 ----
